@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Your fail whale page</h1>
+    <p class="lead">We apologize for the inconvenience, but our website is currently undergoing maintenance. Please try again later.</p>
+    <p><a href="javascript:location.reload(true);" id="reloadButton" class="btn btn-primary btn-lg" style="visibility:hidden;">Retry</a></p>
+</div>
+
+<p>Page load time: @DateTime.Now.ToString("G")</p>
+
+
+@section scripts
+{
+    <script type="text/javascript" src="/Scripts/WebsiteMaintenance/Home.js"></script>
+}
